@@ -1,6 +1,5 @@
-FROM ubuntu:latest
+FROM node:14-alpine
 
-COPY start.sh /
-RUN chmod +x start.sh
+RUN npm install
 
-CMD /start.sh
+CMD ["node", "index.js"]

@@ -1,0 +1,20 @@
+{
+  "name": "Docker-Liveness",
+  "version": "1.0.0",
+  "description": "Simple CMD liveness image",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Champ-Goblem/Docker-Liveness.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Champ-Goblem/Docker-Liveness/issues"
+  },
+  "homepage": "https://github.com/Champ-Goblem/Docker-Liveness#readme"
+}
