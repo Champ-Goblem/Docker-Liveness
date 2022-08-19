@@ -5,7 +5,7 @@ const httpListener = async () => {
   console.log("Starting http listener on 0.0.0.0:8080");
   console.log("/ -> 200");
   console.log("/timeout -> 200 after 15s");
-  console.log("/fail -> 500 after 15s");
+  console.log("/fail -> 500");
 
   let server = createServer(async (req, res) => {
     if (req.url === "/") {
