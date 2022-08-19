@@ -5,7 +5,7 @@ const httpListener = async () => {
   console.log("Starting http listener on 0.0.0.0:8080");
   console.log("/ -> 200");
   console.log("/timeout -> 200 after 15s");
-  console.log("/fail -> 503 after 15s");
+  console.log("/fail -> 500 after 15s");
 
   let server = createServer(async (req, res) => {
     if (req.url === "/") {
@@ -16,7 +16,7 @@ const httpListener = async () => {
       res.statusCode = 200;
       res.end("OK");
     } else if (req.url.startsWith("/fail")) {
-      res.statusCode = 503;
+      res.statusCode = 500;
       res.end("FAIL");
     }
   });
